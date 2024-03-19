@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <header>
+        <h1>Fomulario de inscripciòn</h1>
+        <p>
+            <strong>Bienvenido</strong> estamos felices de que hayas llegado tan lejos y te encuentres en este punto diligencia el siguiente 
+            formulario para que podamos conocerte mejor.
+        </p>
+    </header>
+    <main>
+        <form action="/send" method="get" autocomplete="off" target="_blank" accept-charset="UTF-8" >
+            <fieldset>
+                <legend>datos personales</legend>
+                <label for="nombre"><strong>Nombre:</strong></label>
+                <input type="text" name="nombre" placeholder="juan david" required><br><br>
+                <label for="apellidos"><strong>Apellidos:</strong></label>
+                <input type="text" name="apellidos" placeholder="zapata barrera" required><br><br>
+                <label for="estatura"><strong>Estatura: </strong></label>
+                <select name="estatura" id="estatura">
+                    <option value="1.20">1.20-1.40</option>
+                    <option value="1.20">1.40-1.60</option>
+                    <option value="1.20">1.60-1.80</option>
+                    <option value="1.20">1.80-2.00</option>
+                    <option value="1.20">2.00-2.20</option>
+                </select>
+                <br><br>
+                <label for="fechanac"><strong>fecha de nacimiento: </strong></label>
+                <input type="date"><br><br>
+                <label for=""><strong>Edad:</strong></label>
+                <input type="number" name="Edad" placeholder="26"><br><br>
+                <label for="tipo de sangre"><strong>Tipo de sangre:</strong></label>
+                <select name="tipo de sangre" id="sangre">
+                    <option value="-o">-o</option>
+                    <option value="+o">+o</option>
+                    <option value="-a">-a</option>
+                    <option value="+a">+a</option>
+                    <option value="-ab">-ab</option>
+                    <option value="+ab">+ab</option>
+                </select>
+                <br><br>
+                <label for="correo"><strong>Correo</strong></label>
+                <input type="email" name="correo" placeholder="peranitp@gmail.com" required><br><br>
+                <label for="sexo"><strong>Sexo:</strong></label><br>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" id="sexo"><br>
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="sexo" id="sexo"><br>
+                <label for="otro">Otro</label>
+                <input type="radio" name="sexo" id="sexo"><br><br>
+                <label for="escolaridad"><strong>Escolaridad: </strong></label>
+                <select name="escolaridad" id="educacion">
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="tecnica">Tecnica</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="carrera">Carrera</option>
+                </select>
+                <br><br>
+                <label for="hobbies"><strong>Pasatiempos: </strong></label><br>
+                <label for="Ejercicio">Ejercitarse</label>
+                <input type="checkbox"><br>
+                <label for="Caminatas">Caminatas</label>
+                <input type="checkbox"><br>
+                <label for="ver peliculas">Ver peliculas</label>
+                <input type="checkbox"><br>
+                <label for="Ejercicio">Ciclismo</label>
+                <input type="checkbox"><br>
+                <label for="Deporte">Deporte</label>
+                <input type="checkbox"><br>
+                <label for="Lectura">Lectura</label>
+                <input type="checkbox"><br><br>
+                <input type="submit" value="enviar">
+                <input type="reset" name="borrar" id="borrar">
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+ </body>
+ </html>
